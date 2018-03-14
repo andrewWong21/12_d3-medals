@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Winter Olympics</title>
+</head>
+
+<body>
+  <h1>Winter Olympics Results</h1>
+  <svg height="300" width="900" id="svg" xmlns="http://www.w3.org/2000/sg">
+    <circle cx="150" cy ="150" r="30" fill="#ffd700"></circle>
+    <circle cx="450" cy ="150" r="30" fill="#c0c0c0"></circle>
+    <circle cx="750" cy ="150" r="30" fill="#cd7f32"></circle>
+  </svg>
+  <br>
+  Select a country from the dropdown list below. The radius of each circle is determined by the number of medals won in that ranking, multiplied by 10.<br>
+  <select id="dropdown" onchange="change_medal_sizes()">
+    <option value="america">United States</option>
+    <option value="norway">Norway</option>
+  </select>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="medals.js"></script>
+</body>
+
+</html>
+
